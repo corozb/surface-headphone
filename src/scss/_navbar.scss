@@ -1,0 +1,46 @@
+.nav {
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+  
+  &__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+      padding: .5rem 0;
+
+      h1 {
+        @include brand(2rem);
+        padding-right: .5rem;
+      }
+
+      i {
+        transform: rotate(45deg);
+        color: $hover-color;
+      }
+
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      padding: 0 1rem;
+      color: $second-color;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

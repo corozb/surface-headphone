@@ -58,3 +58,7 @@ const scene3 = new ScrollMagic.Scene({
 
     $video.currentTime = delay
   }, 33.3)  // 30 frames per second  => 1000/30
+
+
+  // LightBox
+  const lightbox = $('.gallery a').simpleLightbox(options);

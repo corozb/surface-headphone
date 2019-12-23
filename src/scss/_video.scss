@@ -17,9 +17,7 @@
     color: #fff;
 
     h1 {
-      font-size: 3rem;
-      font-family: $brand-font;
-      letter-spacing: 2px;
+      @include brand(3rem);
     }
 
     h3 {

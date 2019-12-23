@@ -11,10 +11,71 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 li {
   list-style: none;
+}
+
+.nav {
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+}
+
+.nav__menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.nav__menu-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 0;
+}
+
+.nav__menu-logo h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.08338rem;
+  padding-right: .5rem;
+}
+
+.nav__menu-logo i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #00adb5;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list a {
+  padding: 0 1rem;
+  color: #393e46;
+}
+
+.nav-list a:hover {
+  color: #00adb5;
 }
 
 .hero {
@@ -39,9 +100,9 @@ li {
 }
 
 .hero__text h1 {
-  font-size: 3rem;
   font-family: "Dosis", sans-serif;
-  letter-spacing: 2px;
+  font-size: 3rem;
+  letter-spacing: 0.12506rem;
 }
 
 .hero__text h3 {
@@ -56,14 +117,33 @@ li {
   background: #000;
 }
 
-section {
+.feature {
+  background: url(../../dist/assets/earphones.png) left no-repeat;
   height: 100vh;
+  width: 100%;
   color: black;
+  background-size: 38rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section h1 {
-  padding-top: 300px;
-  text-align: center;
+.feature__container {
+  margin-right: 10rem;
+  text-align: right;
+  padding: 20px;
+  width: 500px;
+  height: 65vh;
+}
+
+.feature h1 {
+  padding-top: 2rem;
   font-size: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

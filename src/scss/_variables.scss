@@ -5,7 +5,7 @@ $main-font: 'Montserrat', sans-serif;
 
 $strong-color: #222831;
 $second-color: #393e46;
-$hover-color: #29a19c;
-$blog-color: #a3f7bf;
+$hover-color: #00adb5;
+$blog-color: #00fff5;
 
-$light-color: linear-gradient(to right, #a3f7bf, #29a19c); 
+$light-color: linear-gradient(to right, $hover-color, $blog-color); 

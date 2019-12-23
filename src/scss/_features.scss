@@ -1,10 +1,24 @@
-section {
+.feature {
+  background: url(../../dist/assets/earphones.png) left no-repeat;
   height: 100vh;
-  color: black;         
+  width: 100%;
+  color: black;   
+  background-size: 38rem;     
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+  &__container {
+    margin-right: 10rem;
+    text-align: right;
+    padding: 20px;
+    width: 500px;
+    height: 65vh;
+  }
 
   h1 {
-    padding-top: 300px;
-    text-align: center;
+    padding-top: 2rem;
     font-size: 3rem;
   }
 }
