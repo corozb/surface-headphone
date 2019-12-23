@@ -31,11 +31,12 @@ li {
 //   font-family: $menu-font;
 // }
 
-// p {
-//   font-family: $brand-font;
-//   color: $second-color;
-//   padding: 1rem 0;
-// }
+p {
+  color: #fff;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
 // ------------- MIXIN ------------
 @mixin brand($size) {
   font-family: $brand-font;
@@ -58,27 +59,24 @@ li {
 
 @mixin button {
   border: none;
-  border-radius: 2rem;
-  background: $light-color;
+  background: $hover-color;
+  border-radius: 1rem;
   cursor: pointer;
   outline: none;
-
+  color: #fff;
+  
   a {
-    font-family: $button-font;
+    font-family: $main-font;
     font-size: 1rem;
-    color: #fff;
   }
   
   &:hover {
-    color: $strong-color;
     background: transparent;
+    color: #fff;
     border: 1px solid #fff;
     box-shadow: 4px 3px 8px $second-color;
   }
 
-  &:hover a, &:hover i {
-    color: $second-color;
-  }
 }
 
 @function calculateRem($size) {

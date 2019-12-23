@@ -10,7 +10,7 @@ const controller = new ScrollMagic.Controller()
 
 // scene
 const scene = new ScrollMagic.Scene({
-  duration: 9000,
+  duration: 10999,
   triggerElement: $hero,
   triggerHook: 0
 })
@@ -56,7 +56,8 @@ const scene3 = new ScrollMagic.Scene({
     delay += (scrollPosition - delay) * accelAmount
     console.log(scrollPosition, delay)
 
-    $video.currentTime = delay
+    // $video.currentTime = scrollPosition
+    $video.currentTime = delay // in this way give us a little millisenconds before stop it
   }, 33.3)  // 30 frames per second  => 1000/30
 
 

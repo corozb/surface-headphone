@@ -18,6 +18,13 @@ li {
   list-style: none;
 }
 
+p {
+  color: #fff;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
 .nav {
   font-size: 1.2rem;
   padding: 0.3rem 0;
@@ -117,12 +124,58 @@ li {
   background: #000;
 }
 
+.banner {
+  background: url(../../dist/assets/pexels-photo-3394661.jpeg) center center no-repeat;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 0 18rem;
+}
+
+.banner-text h3 {
+  font-size: 2rem;
+}
+
+.banner-text h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
 .feature {
-  background: url(../../dist/assets/earphones.png) left no-repeat;
+  background: #161616;
   height: 100vh;
   width: 100%;
   color: black;
-  background-size: 38rem;
+  background-size: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,16 +187,47 @@ li {
           align-items: center;
 }
 
+.feature img {
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: -24rem;
+}
+
 .feature__container {
-  margin-right: 10rem;
+  margin-right: 6rem;
   text-align: right;
   padding: 20px;
   width: 500px;
   height: 65vh;
+  color: #393e46;
 }
 
 .feature h1 {
-  padding-top: 2rem;
   font-size: 3rem;
+  color: #fff;
+}
+
+.feature a {
+  border: none;
+  background: #00adb5;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  padding: .5rem;
+}
+
+.feature a a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.feature a:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 4px 3px 8px #393e46;
+          box-shadow: 4px 3px 8px #393e46;
 }
 /*# sourceMappingURL=style.css.map */

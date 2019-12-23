@@ -1,0 +1,39 @@
+.banner {
+  background: url(../../dist/assets/pexels-photo-3394661.jpeg) center center no-repeat;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    color: #fff;
+    text-align: center;
+    padding: 0 18rem;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+
+  }
+}
