@@ -62,4 +62,4 @@ const scene3 = new ScrollMagic.Scene({
 
 
   // LightBox
-  const lightbox = $('.gallery a').simpleLightbox(options);
+  var lightbox = $('.gallery a').simpleLightbox(options);

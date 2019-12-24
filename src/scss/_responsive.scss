@@ -1,0 +1,41 @@
+@include laptop {
+  .banner-text {
+    padding: 0 7rem;
+  }
+}
+
+@include tablet {
+  .banner-text {
+    padding: 0 4rem;
+  }
+}
+
+@include small {
+  .nav__menu {
+    grid-template-columns: 1fr;
+
+    &-logo {
+      justify-content: center;
+    }
+
+    .nav-list {
+      justify-content: center;
+    }
+  }
+
+  .banner-text {
+    padding: 0 1rem;
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
