@@ -1,5 +1,7 @@
 # Surface Headphone
 
+### [click to view](https://corozb.github.io/surface-headphone/)
+
 This site is about a product page. Contain a video animated by scroll, description of the feactures and pictures gallery.
 
 Tools used:
@@ -14,4 +16,3 @@ Libraries:
 - [ScrollMagic](https://scrollmagic.io/)
 - [SimpleLightBox](https://simplelightbox.com/)
 
-[Live](https://corozb.github.io/surface-headphone/)
