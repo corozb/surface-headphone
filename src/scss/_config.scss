@@ -44,6 +44,28 @@ p {
   letter-spacing: $size * 0.0625 * 0.667;
 }
 
+@mixin underline_hover {
+  position: relative;
+  display: inline-block;
+
+  &:hover:before {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: $hover-color;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: all 360ms cubic-bezier(0.15, 0.005, 0, 1);
+  }
+}
+
 @mixin caja {
   font-weight: 600;
   border-radius: 20px;

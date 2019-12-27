@@ -81,8 +81,30 @@ p {
 }
 
 .nav-list a {
-  padding: 0 1rem;
+  margin: 0 1rem;
   color: #393e46;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list a:hover:before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-list a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #00adb5;
+  opacity: 0;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all 360ms cubic-bezier(0.15, 0.005, 0, 1);
+  transition: all 360ms cubic-bezier(0.15, 0.005, 0, 1);
 }
 
 .nav-list a:hover {
@@ -316,6 +338,28 @@ p {
   line-height: 1.7;
   color: #393e46;
   font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer__container a:hover:before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.footer__container a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #00adb5;
+  opacity: 0;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all 360ms cubic-bezier(0.15, 0.005, 0, 1);
+  transition: all 360ms cubic-bezier(0.15, 0.005, 0, 1);
 }
 
 .footer__container a:hover, .footer__container a:hover > i {

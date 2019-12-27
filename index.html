@@ -6,11 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Headphone Surface || Your voice inside </title>
 
+  <link rel="shortcut icon" href="./dist/assets/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./dist/css/simplelightbox.css">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./dist/css/style.css">
+
 </head>
 <body id="home">
   <nav class="nav">
@@ -21,7 +24,7 @@
       </div>
       <ul class="nav-list">
         <li><a href="#home">Home</a></li>
-        <li><a href="#desc">Feature</a></li>
+        <li><a href="#feature">Feature</a></li>
       </ul>
     </div>
   </nav>
@@ -37,9 +40,9 @@
   </div>  -->
 
 
-  <section class="banner">
+  <section id="feature" class="banner">
     <div class="banner__overlay">
-      <div class="banner-text">
+      <div class="banner-text" data-aos="fade-up">
         <h3>The next level in wireless technology.</h3>
         <h2>Hear your music, not the noise.</h2>
         <p>Pure Adaptive Noise Canceling (Pure ANC) blocks out distractions, so you can get closer to your music.
@@ -51,8 +54,8 @@
 
 
   <section class="feature">
-    <img src="./dist/assets/studio3-pdp-p04.png.large.1x.png" alt="">
-    <div class="feature__container">
+    <img src="./dist/assets/studio3-pdp-p04.png.large.1x.png" alt="" data-aos="fade-right">
+    <div class="feature__container" data-aos="fade-left">
       <h1>Pair easily, switch seamlessly.</h1>
       <p>Take them out of the case and they will be ready to work with all your devices. Put them on and they will connect instantly, as if by magic, to give you a sound rich in nuances and high quality.</p>
       <a href="#" class="btn">Read More</a>
@@ -61,26 +64,26 @@
 
   <section class="gallery__wrapper">
     <div class="gallery">
-      <a href="./dist/assets/pexels-photo-1756475.jpeg" class="big"><img src="./dist/assets/pexels-photo-1756475.jpeg" alt=""></a>
-      <a href="./dist/assets/pexels-photo-2080611.jpeg" class="big"><img src="./dist/assets/pexels-photo-2080611.jpeg" alt=""></a>
-      <a href="./dist/assets/pexels-photo-2771625.jpeg" class="big"><img src="./dist/assets/pexels-photo-2771625.jpeg" alt=""></a>
-      <a href="./dist/assets/pexels-photo-3345882.jpeg" class="big"><img src="./dist/assets/pexels-photo-3345882.jpeg" alt=""></a>
-      <a href="./dist/assets/pexels-photo-838696.jpeg" class="big"><img src="./dist/assets/pexels-photo-838696.jpeg" alt=""></a>
-      <a href="./dist/assets/pexels-photo-815494.jpeg" class="big"><img src="./dist/assets/pexels-photo-815494.jpeg" alt=""></a>
+      <a href="./dist/assets/pexels-photo-1756475.jpeg" data-lightbox="mygallery" class="big" data-aos="flip-left" data-aos-delay="100"><img src="./dist/assets/pexels-photo-1756475.jpeg" alt=""></a>
+      <a href="./dist/assets/pexels-photo-2080611.jpeg" class="big" data-aos="flip-left" data-aos-delay="200"><img src="./dist/assets/pexels-photo-2080611.jpeg" alt=""></a>
+      <a href="./dist/assets/pexels-photo-2771625.jpeg" class="big" data-aos="flip-left" data-aos-delay="300"><img src="./dist/assets/pexels-photo-2771625.jpeg" alt=""></a>
+      <a href="./dist/assets/pexels-photo-3345882.jpeg" class="big" data-aos="flip-left" data-aos-delay="600"><img src="./dist/assets/pexels-photo-3345882.jpeg" alt=""></a>
+      <a href="./dist/assets/pexels-photo-838696.jpeg" class="big" data-aos="flip-left" data-aos-delay="500"><img src="./dist/assets/pexels-photo-838696.jpeg" alt=""></a>
+      <a href="./dist/assets/pexels-photo-815494.jpeg" class="big" data-aos="flip-left" data-aos-delay="400"><img src="./dist/assets/pexels-photo-815494.jpeg" alt=""></a>
     </div>
   </section>
 
 
   <footer class="footer">
     <div class="footer__container">
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <h2>Follow Us</h2>
         <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
         <a href="https://facebook.com/"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://youtube.com/"><i class="fab fa-youtube fa-2x"></i></a>
       </div>
       
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <h3>Company</h3>
         <ul>
           <li><a href="#">About</a></li>
@@ -91,7 +94,7 @@
         </ul>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="300">
         <h3>Support</h3>
         <ul>
           <li><a href="">Product Help</a></li>
@@ -101,7 +104,7 @@
         </ul>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="400">
         <h3>Suscribe</h3>
         <p>Stay in touch with our Newsletter Notifications.</p>
         <form name="email-form" method="POST" data-netlify="true">
@@ -126,15 +129,16 @@
   </footer>
 
   
-
-  
-
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./dist/js/simple-lightbox.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="./dist/js/script.js"></script>
 
 </body>

@@ -1,3 +1,12 @@
+// simpleLightbox jQuery
+$(function() {
+  const $gallery = $('.gallery a').simpleLightbox();
+})
+
+// Animate On Scroll Library
+AOS.init();
+
+
 const $hero = document.querySelector('.hero')
 const $video = document.querySelector('video')
 const $text = $hero.querySelector('.hero__text')
@@ -61,5 +70,3 @@ const scene3 = new ScrollMagic.Scene({
   }, 33.3)  // 30 frames per second  => 1000/30
 
 
-  // LightBox
-  var lightbox = $('.gallery a').simpleLightbox(options);

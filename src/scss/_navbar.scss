@@ -39,8 +39,9 @@
     align-items: center;
 
     a {
-      padding: 0 1rem;
+      margin: 0 1rem;
       color: $second-color;
+      @include underline_hover;
 
       &:hover {
         color: $hover-color;

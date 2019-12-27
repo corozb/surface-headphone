@@ -31,22 +31,11 @@
       line-height: 1.7;
       color: $second-color;
       font-size: 1.2rem;
+      @include underline_hover;
 
       &:hover, &:hover > i {
-        color: $hover-color
+        color: $hover-color;
       }
-
-      // ::before {
-      // content: '';
-      // position: absolute;
-      // bottom: 0;
-      // height: 2px;
-      // width: 100%;
-      // background: #8c8c8c;
-      // opacity: 0;
-      // transform: translateY(3px);
-      // transition: all 360ms cubic-bezier(0.15, 0.005, 0, 1);
-      // }
 
       > i {
         color: $second-color;
