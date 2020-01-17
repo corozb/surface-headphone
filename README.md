@@ -11,7 +11,7 @@ Tools used:
 -jQuery
 
 Libraries:
-- [Animate On Scroll Library (AOS)](
+- [Animate On Scroll Library (AOS)](https://michalsnik.github.io/aos/)
 - [Green Sock (GSAP)](https://greensock.com/gsap/)
 - [ScrollMagic](https://scrollmagic.io/)
 - [SimpleLightBox](https://simplelightbox.com/)
